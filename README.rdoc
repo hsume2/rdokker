@@ -21,11 +21,10 @@ First of all, the gem you want RDocs for must be installed on your system.
   rackup # goto http://localhost:9292
   
 === With heroku
-I created this to serve my RDoc with heroku. Get an account at heroku[http://heroku.com].
-Then after following the usage steps, do:
+I created this to serve my RDoc with heroku. Get an account at heroku.com[http://heroku.com] and install the heroku gem. Then after following the usage steps, do:
   heroku create
   git add *
   git commit -m 'first commit'
   git push heroku master
 
-That's it.
+That's it. +heroku open+ to see your hard work.
