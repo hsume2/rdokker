@@ -1,0 +1,6 @@
+RDocs for gems:
+<ul>
+<% for gem in @dokked_gems %>
+    <li><a href="/<%= File.basename(gem) %>/index.html"><%= File.basename(gem) %></a></li>
+<% end %>
+</ul>

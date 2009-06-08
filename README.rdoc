@@ -1,0 +1,31 @@
+= rdokker
+
++rdokker+ is a cool little Sinatra app to serve RubyGem RDocs (statically).
+
+If you choose to serve only one RDoc, it'll be served from '/', otherwise
+multiple RDoc's will be served from '/gem_name-version'. In this case, you can
+also view the list of gems at '/'.
+
+== Usage
+First of all, the gem you want RDocs for must be installed on your system.
+  git clone git://github.com/hsume2/rdokker.git my_rdokker
+  cd my_rdokker
+  
+  rake dokken GEM=heroku 
+  # replace with the gem you want
+  # you can also specify VERSION
+  # gem list to see the gem names and versions
+  
+  ruby rdokker.rb # goto http://localhost:4567
+  # or
+  rackup # goto http://localhost:9292
+  
+=== With heroku
+I created this to serve my RDoc with heroku. Get an account at heroku[http://heroku.com].
+Then after following the usage steps, do:
+  heroku create
+  git add *
+  git commit -m 'first commit'
+  git push heroku master
+
+That's it.
